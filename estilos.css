@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #263445;
+    padding: 20px;
+}
+
+header {
+    background-color: #203b63;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #dce8f5;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.panel {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.panel h2 {
+    color: #203b63;
+    margin-bottom: 20px;
+}
+
+.campos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.campos div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 9px;
+    border: 1px solid #b8c5d5;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    min-width: 75px;
+}
+
+input:focus {
+    outline: 2px solid #5c91d3;
+    border-color: #5c91d3;
+}
+
+button {
+    background-color: #2874c7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1b5595;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    min-width: 500px;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #dce8f5;
+    color: #203b63;
+}
+
+td {
+    background-color: #f8fafc;
+}
+
+td input, th input {
+    width: 100%;
+    min-width: 65px;
+}
+
+#resultado h2,
+#resultado h3 {
+    color: #203b63;
+    margin: 18px 0 12px;
+}
+
+#resultado p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+#resultado table {
+    margin-top: 15px;
+}
+
+#resultado h2:last-of-type {
+    background-color: #e2edf9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #536477;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    .campos {
+        flex-direction: column;
+    }
+}

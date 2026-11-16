@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Costo Mínimo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema Interactivo</h1>
+        <h2>Método de Costo Mínimo</h2>
+        <p>Resolución del problema de transporte</p>
+    </header>
+
+    <main>
+
+        <section class="panel">
+            <h2>1. Configurar el problema</h2>
+
+            <div class="campos">
+                <div>
+                    <label for="cantidadOrigenes">Cantidad de orígenes:</label>
+                    <input type="number" id="cantidadOrigenes" min="1" value="2">
+                </div>
+
+                <div>
+                    <label for="cantidadDestinos">Cantidad de destinos:</label>
+                    <input type="number" id="cantidadDestinos" min="1" value="3">
+                </div>
+            </div>
+
+            <button onclick="crearTabla()">Generar tabla</button>
+        </section>
+
+        <section class="panel">
+            <h2>2. Ingresar los datos</h2>
+            <div id="contenedorTabla"></div>
+
+            <button onclick="resolverCostoMinimo()">
+                Resolver por Costo Mínimo
+            </button>
+        </section>
+
+        <section class="panel">
+            <h2>3. Resultado</h2>
+            <div id="resultado">
+                <p>Los resultados aparecerán aquí.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto de Modelos y Sistemas</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
